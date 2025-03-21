@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Лабораторная работа'),
+          title: Text('Перунов Вадим Дмитриевич'),
         ),
         body: MyHomePage(),
       ),
@@ -26,7 +26,7 @@ class MyHomePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Wrap(
-            spacing: 8.0,
+            spacing: 0.0,
             children: [
             Container(
               padding: EdgeInsets.all(8.0),
@@ -45,7 +45,7 @@ class MyHomePage extends StatelessWidget {
             ),
             Container(
               padding: EdgeInsets.all(8.0),
-              color: Colors.amber,
+              color: const Color.fromARGB(255, 219, 194, 120),
               child: Text('Пол: Мужской'),
             ),
             ],
