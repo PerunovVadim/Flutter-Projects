@@ -63,7 +63,7 @@ class _CameraScreenState extends State<CameraScreen> {
         _isPictureTaken = true;
       });
 
-      // Return the image path to the previous screen
+      
       Navigator.pop(context, image.path);
       
     } catch (e) {
@@ -82,7 +82,7 @@ class _CameraScreenState extends State<CameraScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Removed AppBar since this is a secondary screen
+      
       body: _buildBody(),
       floatingActionButton: _isCameraInitialized && !_isPictureTaken
           ? FloatingActionButton(
