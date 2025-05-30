@@ -28,7 +28,7 @@ class _DewPointCalculatorState extends State<DewPointCalculator> {
       final temperature = double.parse(_temperatureController.text);
       final humidity = double.parse(_humidityController.text);
 
-      // Формула Магнуса для расчёта точки росы
+      
       final a = 17.27;
       final b = 237.7;
       final alpha = ((a * temperature) / (b + temperature)) + log(humidity / 100);
